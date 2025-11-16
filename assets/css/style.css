@@ -1,0 +1,61 @@
+body{
+    font-family: "Momo Trust Display", sans-serif;
+}
+.main_header_div {
+    /* background-color: #021a31; */
+    background: linear-gradient(to right, #000428, #004e92);
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.header_left_side {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.header_left_side img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    margin: 1%;
+}
+
+.header_left_side label {
+    font-size: 40px;
+    margin-left: 1%;
+    
+    
+}
+
+.page_logo_div {
+
+}
+
+.header_right_side {
+    width: 50%;
+    height: 15%;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+}
+
+.header_right_side {
+width: 50%;
+height: 15%;
+display: flex;
+justify-content: right;
+align-content: center;
+
+}
+
+.header_right_side input{
+    cursor: text;
+    border-radius: 0.2rem;
+    margin-right: 5%;
+}
+
+label{
+    color: aliceblue;
+}
