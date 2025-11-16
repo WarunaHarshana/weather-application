@@ -1,12 +1,14 @@
-body{
+body {
     font-family: "Momo Trust Display", sans-serif;
+    margin: 0; 
 }
+
 .main_header_div {
-    /* background-color: #021a31; */
+    
     background: linear-gradient(to right, #000428, #004e92);
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    
 }
 
 .header_left_side {
@@ -25,13 +27,10 @@ body{
 .header_left_side label {
     font-size: 40px;
     margin-left: 1%;
-    
-    
+    color: aliceblue; 
 }
 
-.page_logo_div {
-
-}
+.page_logo_div {}
 
 .header_right_side {
     width: 50%;
@@ -42,20 +41,144 @@ body{
 }
 
 .header_right_side {
-width: 50%;
-height: 15%;
-display: flex;
-justify-content: right;
-align-content: center;
-
+    width: 50%;
+    height: 15%;
+    display: flex;
+    justify-content: right;
+    align-content: center;
 }
 
-.header_right_side input{
+.header_right_side input {
     cursor: text;
     border-radius: 0.2rem;
     margin-right: 5%;
 }
 
-label{
-    color: aliceblue;
+
+
+.weather_card { 
+    background-color: #fff;
+    /* border-radius: 20px;
+    border: 1px solid #ddd; */
+    padding: 30px;
+    color: #000;
+    max-width: 1200px;
+
+    display: flex; 
+    gap: 50px; 
+    margin: 30px auto; 
+}
+
+
+.weather_left_side {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+}
+
+.current_weather {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+
+
+.weather_icon img {
+    width: 250px;
+    height: auto;
+}
+
+
+
+.current_weather .location {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.current_weather .temperature {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.current_weather .condition {
+    font-size: 24px;
+    color: #555;
+}
+
+.current_weather .date {
+    color: #555;
+    margin-top: 5px;
+}
+
+
+.sun_times {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.sun_rise_image img,
+.sun_set_image img {
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+.sun_times div {
+    font-size: 14px;
+    color: #555;
+}
+
+.sun_times div div:nth-child(2) {
+    font-weight: bold;
+    color: #000;
+    margin: 5px 0;
+}
+
+.sun_times div div:nth-child(3) {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.weather_right_side {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 25px;
+    align-content: center;
+    width: 50%; 
+}
+
+.stat_item {
+    display: flex;
+    align-items: center; 
+    gap: 15px;
+}
+
+.stat_icon {
+    width: 35px;  
+    height: 35px;
+    stroke: #555; 
+    fill: none; 
+}
+
+.stat_item .stat_title {
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.stat_item .stat_value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
 }
